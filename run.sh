@@ -8,7 +8,7 @@ DBNAME=SEU_BANCO_DE_DADOS
 DAYS=+2
 
 # Exportar
-mysqldump -u root $DBNAME --triggers --routines > $FNAME
+mysqldump -u root $DBNAME --triggers --routines --events > $FNAME
 
 # Compactar
 bzip2 $FNAME
